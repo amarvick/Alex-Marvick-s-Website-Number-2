@@ -1,0 +1,219 @@
+body {
+	background-color: #B3FFFF;
+}
+
+/*Header Code*/
+
+#header {
+	background-color: #282828;
+	color: #E0E0E0;
+	text-align: center;
+	height: 200px; 
+	width: 100%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#Alex {
+	left: 15px;
+	top: 30px;
+	position: absolute;
+	height: 180px;
+	width: 120px;
+}
+
+#name {
+	padding-top: 40px;
+}
+
+#nameMenu {
+	width: 700px;
+	margin-top: 40px;
+	background-color: #E0E0E0; /*Look in to later*/
+	margin-left: 300px;
+}
+
+#menu li {
+	top: 50px;
+	display: inline;
+	margin: 20px;
+}
+
+#menu a:link {	
+	text-decoration: none;
+	color: #C0C0C0;
+}
+
+#menu a:visited {	
+	text-decoration: none;
+	color: #C0C0C0;
+}
+
+#menu a:hover {	
+	text-decoration: none;
+	color: #E0E0E0;
+}
+
+/*Body Section*/
+
+#body {
+	margin-left: 95px;
+	background-color: #33FFB9;
+	border-radius: 5px;
+	height: 100%;
+	width: 85%;
+	margin-top: 20px;
+	text-align: center;
+}
+
+h2 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 30px;
+	color: #0F3D0F;
+}
+
+p {	
+	margin: 20px 40px;
+	font-size: 18px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: #0F3D0F;
+}
+
+/*Resume Portion of the Body*/
+
+/*Portfolio Portion of the Body*/
+
+/*Tutoring Portion of the Body*/
+
+/*Footer Section Below including dividers*/
+
+#footer {	
+	background-color: #E5FFFF;
+	width: 100%;
+	height: 260px;
+	border-radius: 5px;
+}
+
+#border1 {
+	position: relative;
+	border: 1px solid #007F80;
+	height: 180px;
+	width: 0.1px;
+	left: 180px;
+	bottom: 185px;
+}
+
+#border2 {
+	position: relative;
+	border: 1px solid #007F80;
+	height: 180px;
+	width: 0.1px;
+	left: 1090px;
+	bottom: 367px;
+}
+
+/*Footer: Menu*/
+
+#bottomMenu {
+	position: relative;
+	text-align: center;
+	padding-top: 20px;
+	top: 80px;
+	left: 300px;
+	width: 600px;
+}
+
+#bottomMenu li {	
+	display: inline;
+	text-align: center;
+	margin: 5px;
+	padding-right: 15px;
+	border-right: 1px solid #0099CC;
+	text-decoration: none;
+}
+
+#bottomMenu li:last-child {
+	border-right: none;
+}
+
+#bottomMenu a:link {	
+	text-decoration: none;
+	color: blue;
+}
+
+#bottomMenu a:visited {	
+	text-decoration: none;
+	color: blue;
+}
+
+#bottomMenu a:hover {	
+	text-decoration: none;
+	color: green;
+}
+
+/*Footer: Social Media & Contact Links*/
+
+#contactLinksList li {
+	display: inline;
+	list-style-type: none;
+}
+
+.contactLinks {
+	background-color: #80D5FF;
+	border-radius: 100%;
+	height: 20px;
+	width: 20px;
+	border: 2px solid #007F80;
+	margin-left: 80px;
+	text-align: center;
+}
+
+.contactLinks:hover {
+	background-color: #E5F7FF;
+	border: 2px solid #00E5E6;
+}
+
+.contactLinks:hover i {
+	color: #00E5E6;
+}
+
+i {
+	color: #007F80;
+}
+
+#facebook i {
+	margin-top: 3.5px;
+}
+
+#linkedin i {
+	margin-top: 2.5px;
+	margin-left: 0.5px;
+}
+
+#github i {
+	margin-top: 2.5px;
+}
+
+#instagram i {
+	margin-top: 2.5px;
+}
+
+#twitter i {
+	margin-top: 2.5px;
+}
+
+/*Footer: Other Links*/
+
+.inquiryLinks {	
+	position: absolute;
+	width: 60px;
+	height: 40px;
+	border: 1px solid black;
+	bottom: 0px;
+	left: 900px;
+}
+
+#wyzant {
+	
+}

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html><head>
+
+	<title>BBC News</title>
+	
+	<meta charset = "utf-8" />
+	<meta http-equiv = "Content-type" content = "text/css; charset = utf-8" />
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0" />
+	
+	<style type = "text/css">
+	
+		body {
+			margin: 0;
+			background-color: white;
+		}
+
+		div h4:link {
+			color: black;
+		}
+		
+		div h4:visited {
+			color: black;
+		}
+		
+		p:link {
+			color: black;
+		}
+		
+		p:visited {
+			color: black;
+		}
+		
+		ul {
+			list-style-type: none;
+		}
+	
+		#topbar {
+			background-color: black;
+			height: 40px;
+			z-index: 0;
+			border-bottom: 1px solid #666666;
+		}
+
+		#logo {
+			position: absolute;
+			border-right: 1px solid #666666;
+			margin-left: 144px;
+			height: 30px;
+			width: 90px;
+			padding: 5px;
+		}
+		
+		#signInFDiv {
+			position: absolute; 
+			border-right: 1px solid #666666;
+			margin-left: 245px;
+			height: 40px;
+			width: 170px;
+			background-color: black;
+			z-index: 0;
+		}
+		
+		#signInFDiv:hover {
+			background-color: #1088BB;
+		}
+
+		#signImg {
+			position: relative;
+			top: 10px;
+			left: 14px;
+			z-index: 2;
+		}
+
+		#signInFDiv p {
+			position: relative;
+			font-size: 13px;
+			color: white;
+			bottom: 26px;
+			left: 42px;
+			z-index: 2;
+			font-family: arial, helvetica, sans-serif;
+		}
+		
+		#signInHDiv {
+			position: relative;
+			height: 39px;
+			width: 170px;
+			background-color: black;
+			z-index: 1;
+			bottom: 70px;
+		}
+	
+		#newsFDiv {
+			position: absolute; 
+			border-right: 1px solid #666666;
+			margin-left: 416px;
+			height: 40px;
+			width: 66px;
+			background-color: black;
+			z-index: 0;
+		}
+		
+		#newsFDiv:hover {
+			background-color: #9A2211;
+		}	
+
+		#newsFDiv p {
+			position: relative;
+			font-size: 13px;
+			color: white;
+			text-align: center;
+			z-index: 2;
+			font-family: arial, helvetica, sans-serif;
+		}
+		
+		#newsHDiv {
+			border-right: 1px solid #666666;
+			position: relative;
+			height: 40px;
+			width: 66px;
+			background-color: black;
+			z-index: 1;
+			bottom: 45.5px;
+		}
+
+		#sportFDiv {
+			position: absolute; 
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			margin-left: 482px;
+			height: 40px;
+			width: 66px;
+			background-color: black;
+			z-index: 0;
+		}
+		
+		#sportFDiv:hover {
+			background-color: yellow;
+		}	
+
+		#sportFDiv p {
+			position: relative;
+			font-size: 13px;
+			color: white;
+			text-align: center;
+			z-index: 2;
+			font-family: arial, helvetica, sans-serif;
+		}
+		
+		#sportHDiv {
+			border-right: 1px solid #666666;
+			position: relative;
+			height: 40px;
+			width: 66px;
+			background-color: black;
+			z-index: 1;
+			bottom: 45.5px;
+		}
+
+		#weatherFDiv {
+			position: absolute; 
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			margin-left: 549px;
+			height: 40px;
+			width: 83px;
+			background-color: black;
+			z-index: 0;
+		}
+		
+		#weatherFDiv:hover {
+			background-color: #88CCEF;
+		}	
+
+		#weatherFDiv p {
+			position: relative;
+			font-size: 13px;
+			color: white;
+			text-align: center;
+			z-index: 2;
+			font-family: arial, helvetica, sans-serif;
+		}
+		
+		#weatherHDiv {
+			border-right: 1px solid #666666;
+			position: relative;
+			height: 40px;
+			width: 83px;
+			background-color: black;
+			z-index: 1;
+			bottom: 45.5px;
+		}
+
+		#shopFDiv {
+			position: absolute; 
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			margin-left: 633px;
+			height: 40px;
+			width: 65px;
+			background-color: black;
+			z-index: 0;
+		}
+		
+		#shopFDiv:hover {
+			background-color: #1996E8;
+		}	
+
+		#shopFDiv p {
+			position: relative;
+			font-size: 13px;
+			color: white;
+			text-align: center;
+			z-index: 2;
+			font-family: arial, helvetica, sans-serif;
+		}
+		
+		#shopHDiv {
+			border-right: 1px solid #666666;
+			position: relative;
+			height: 40px;
+			width: 65px;
+			background-color: black;
+			z-index: 1;
+			bottom: 45.5px;
+		}
+
+		#earthFDiv {
+			position: absolute; 
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			margin-left: 699px;
+			height: 40px;
+			width: 65px;
+			background-color: black;
+			z-index: 0;
+		}
+		
+		#earthFDiv:hover {
+			background-color: white;
+		}	
+
+		#earthFDiv p {
+			position: relative;
+			font-size: 13px;
+			color: white;
+			text-align: center;
+			z-index: 2;
+			font-family: arial, helvetica, sans-serif;
+		}
+		
+		#earthHDiv {
+			border-right: 1px solid #666666;
+			position: relative;
+			height: 40px;
+			width: 65px;
+			background-color: black;
+			z-index: 1;
+			bottom: 45.5px;
+		}
+
+		#travelFDiv {
+			position: absolute; 
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			margin-left: 765px;
+			height: 40px;
+			width: 69px;
+			background-color: black;
+			z-index: 0;
+		}
+		
+		#travelFDiv:hover {
+			background-color: white;
+		}	
+
+		#travelFDiv p {
+			position: relative;
+			font-size: 13px;
+			color: white;
+			text-align: center;
+			z-index: 2;
+			font-family: arial, helvetica, sans-serif;
+		}
+		
+		#travelHDiv {
+			border-right: 1px solid #666666;
+			position: relative;
+			height: 40px;
+			width: 69px;
+			background-color: black;
+			z-index: 1;
+			bottom: 45.5px;
+		}
+
+		#moreFDiv {
+			position: absolute; 
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			margin-left: 835px;
+			height: 40px;
+			width: 81px;
+			background-color: black;
+			z-index: 0;
+		}
+		
+		#moreFDiv:hover {
+			background-color: white;
+		}	
+
+		#moreFDiv p {
+			position: relative;
+			font-size: 13px;
+			color: white;
+			left: 16px;
+			z-index: 2;
+			font-family: arial, helvetica, sans-serif;
+		}
+		
+		#moreHDiv {
+			border-right: 1px solid #666666;
+			position: relative;
+			height: 40px;
+			width: 81px;
+			background-color: black;
+			z-index: 1;
+			bottom: 45.5px;
+		}
+
+		#moreFDiv img {
+			position: relative;
+			bottom: 71px;
+			left: 57px;
+			z-index: 2;
+		}
+		
+		#searchBox {
+			margin-left: 935px;
+			position: relative;
+			top: 10px;
+			height: 50px;
+			width: 85px;
+		}
+		
+		#maintopics {
+			background-color: #E8E9E2;
+			height: 568px;
+		}
+		
+		#maintopics h2 {
+			float: right;
+			padding-top: 10px;
+			padding-right: 16px;
+			font-family: arial;
+			color: #434343;
+		}
+
+		#alexPhoto {
+			position: absolute;
+			width: 320px;
+			height: 464px;
+			margin-left: 16px;
+			margin-top: 72px;
+		}
+		
+		#blkSpace {
+			position: absolute;
+			width: 507px;
+			height: 464px;
+			margin-left: 336px;
+			margin-top: 72px;
+			background-color: black;
+		}
+		
+		#blkSpace h1 {
+			color: white;
+			padding: 20px;
+			text-align: center;
+			font-family: arial;
+		}
+		
+		#blkSpace h3 {
+			color: white;
+			padding: 20px;
+			top: 120px;
+			position: relative;
+			font-family: arial;
+			text-align: center;
+		}
+
+		#picOne {
+			width: 405px;
+			height: 227px;
+			position: relative;
+			left: 859px;
+			top: 72px;
+		}
+		
+		#picTwo {
+			position: absolute;
+			width: 196px;
+			height: 111px;
+			left: 858px;
+			top: 348px;
+		}
+		
+		#picThree {
+			width: 197px;
+			height: 110px;
+			position: relative;
+			left: 659px;
+			top: 190px;
+		}
+		
+		#picFour {
+			width: 196px;
+			height: 111px;
+			position: relative;
+			left: 249px;
+			top: 309px;
+		}
+		
+		#picFive {
+			width: 196px;
+			height: 111px;
+			position: relative;
+			left: 259px;
+			top: 309px;
+		}
+
+		#languageDiv h2 {
+			font-family: arial;
+			color: #434343;
+			margin-left: 16px;
+			margin-top: 37px;
+		}
+		
+		#lanPersian h4 {
+			position: absolute;
+			font-family: arial;
+			left: 16px;
+			top: 681px;
+			font-size: 18px;
+		}
+		
+		#lanPersian p {
+			position: absolute;
+			text-align: right;
+			font-size: 14px;
+			font-family: arial;
+			width: 110px;
+			height: 70px;
+			left: 21.5px;
+			top: 718px;
+		}
+		
+		#lanSpanish h4 {
+			position: absolute;
+			font-family: arial;
+			left: 148px;
+			top: 681px;
+			font-size: 18px;
+		}
+		
+		#lanSpanish p {
+			position: absolute;
+			font-size: 14px;
+			font-family: arial;
+			width: 110px;
+			height: 70px;
+			left: 148px;
+			top: 718px;
+		}
+
+		#lanUrdu h4 {
+			position: absolute;
+			font-family: arial;
+			left: 279px;
+			top: 681px;
+			font-size: 18px;
+		}
+		
+		#lanUrdu p {
+			position: absolute;
+			font-size: 14px;
+			font-family: arial;
+			width: 120px;
+			height: 70px;
+			left: 279px;
+			top: 718px;
+			text-align: right;
+		}
+
+		#lanVietnamese h4 {
+			position: absolute;
+			font-family: arial;
+			left: 411px;
+			top: 681px;
+			font-size: 18px;
+		}
+		
+		#lanVietnamese p {
+			position: absolute;
+			font-size: 14px;
+			font-family: arial;
+			width: 110px;
+			height: 70px;
+			left: 411px;
+			top: 718px;
+		}
+
+	</style>
+	
+</head>
+<body>
+
+		<div id = "topbar">
+	
+			<a href = "http://www.bbc.com"><img id = "logo" src = "http://img3.wikia.nocookie.net/__cb20080724060632/tardis/images/f/f7/BBC_logo_small.png" /></a>
+
+			<a href = "https://ssl.bbc.com/id/signin"><div id = "signInFDiv">
+
+				<img id = "signImg" src = "Signin.png" />
+				<p><b>Sign In</b></p>
+				
+				<div id = "signInHDiv"></div>
+
+			</div></a>
+				
+			<a href = "http://www.bbc.com/news"><div id = "newsFDiv">
+				
+				<p><b>News</b></p>
+				<div id = "newsHDiv"></div>
+				
+			</div></a>
+			
+			<a href = "http://www.bbc.com/sport/0/"><div id = "sportFDiv">
+				
+				<p><b>Sport</b></p>
+				<div id = "sportHDiv"></div>
+				
+			</div></a>
+			
+			<a href = "http://www.bbc.com/weather/"><div id = "weatherFDiv">
+				
+				<p><b>Weather</b></p>
+				<div id = "weatherHDiv"></div>
+				
+			</div></a>
+			
+			<a href = "http://shop.bbc.com/us/page/home"><div id = "shopFDiv">
+				
+				<p><b>Shop</b></p>
+				<div id = "shopHDiv"></div>
+				
+			</div></a>
+			
+			<a href = "http://www.bbc.com/earth/world"><div id = "earthFDiv">
+				
+				<p><b>Earth</b></p>
+				<div id = "earthHDiv"></div>
+				
+			</div></a>
+			
+			<a href = "http://www.bbc.com/travel/"><div id = "travelFDiv">
+				
+				<p><b>Travel</b></p>
+				<div id = "travelHDiv"></div>
+				
+			</div></a>
+			
+			<a href = "http://www.facebook.com"><div id = "moreFDiv">
+				
+				<p><b>More</b></p>
+				<div id = "moreHDiv"></div>
+				<img src = "dropdown.png" />
+				
+			</div></a>
+			
+			<div id = "searchBox">
+
+				<input type = "text" placeholder = "Search" required />
+				
+			</div>	
+		
+		</div>	
+		
+		<div id = "maintopics">
+		
+			<h2>MONDAY, 31 AUGUST</h2>
+			<a href = "http://www.facebook.com/AlexMarvick"><img id = "alexPhoto" src = "Alex 2.jpg" />
+			
+			<div id = "blkSpace"> 
+				<h1>Alex Marvick Breaks Out Successful Home-Gym Rental Service Web Platform</h1>
+				<h3>Check out how Alex Marvick and Lorenzo Juarez scaled a multi-million dollar marketplace in to the international land</h3>
+			</div></a>
+		
+			<a href = "http://www.bbc.com/capital/story/20150828-the-golden-elixir-worth-more-than-gold"><img id = "picOne" src = "pic1.png" /></a>
+			<a href = "http://www.bbc.com/culture/story/20150828-where-do-zombies-come-from"><img id = "picTwo" src = "pic2.png" /></a>
+			<a href = "http://www.bbc.com/sport/0/tennis/34104670"><img id = "picThree" src = "pic3.png" /></a>
+			<a href = "http://www.bbc.com/news/business-34073075"><img id = "picFour" src = "pic4.png" /></a>
+			<a href = "http://www.bbc.co.uk/guides/z2vxp39"><img id = "picFive" src = "pic5.png" /></a>
+		</div>
+		
+		<div id = "languageDiv">
+			<h2>BBC IN OTHER LANGUAGES</h2>
+		</div>
+		
+		<div id = "lanPersian">
+			<a href = "http://www.bbc.com/persian"><h4>Persian</h4></a>
+			<a href = "http://www.bbc.com/persian/world/2015/09/150831_u04_migrant_crisis_vienna"><p><b>علی شکوری‌‌راد با قرار کفالت آزاد شد</b></p></a>
+		</div>
+		
+		<div id = "lanSpanish">
+			<a href = "http://www.bbc.com/mundo"><h4>Spanish</h4></a>
+			<a href = "http://www.bbc.com/mundo/noticias/2015/08/150831_economia_impacto_china_eeuu_lf"><p><b>Por qué EE.UU. no se debe preocupar tanto por la turbulencia china</b></p></a>
+		</div>
+		
+		<div id = "lanUrdu">
+			<a href = "http://www.bbc.com/urdu"><h4>Urdu</h4></a>
+			<a href = "http://www.bbc.com/urdu/world/2015/08/150831_bel_temple_destroyed_sh"><p><b>’نواز حکومت طالبان کو بچانے کے لیے قوم کو تقسیم کر رہی ہے‘</b></p></a>
+		</div>
+		
+		<div id = "lanVietnamese">	
+			<a href = "http://www.bbc.com/vietnamese"><h4>Vietnamese</h4></a>
+			<a href = "http://www.bbc.com/vietnamese/world/2015/08/150831_kiev_protest_clashes"><p><b>Đụng độ sau phiên họp Quốc hội Ukraine</b></p></a>
+		</div>
+		
+		
+		
+</body></html>
